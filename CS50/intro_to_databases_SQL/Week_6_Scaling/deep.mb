@@ -1,0 +1,15 @@
+# From the Deep
+
+In this problem, you'll write freeform responses to the questions provided in the specification.
+
+## Random Partitioning
+
+In this way, only one boat won't be overloaded with data, but on the other hand, querying could be harder than having everything in one place; nevertheless, a view grouping all boats could easily solve this problem.
+
+## Partitioning by Hour
+
+On this approach, data will be stored partitioned by hours, leaving some boats without observation if in a given hour there are 0 observations. On the other hand, querying will be easy considering hours as a filter.
+
+## Partitioning by Hash Value
+
+This last proposal is similar to the first one,  adding the challenge of creating the function, and keeping the problem of querying in all boats.
